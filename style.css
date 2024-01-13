@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1d1d23;
+    color: white;
+    font-family: Roboto;
+}
+
+main,
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#active-timers-container {
+    display: grid;
+    gap: 20px;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.timer-card {
+    background-color: #34344a;
+    padding: 20px 30px;
+    width: 450px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* changing the styles of input elements */
+input[type="number"] {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    width: 45px;
+    height: 24px;
+    border: none;
+    text-decoration-line: underline;
+    margin: 0px 10px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* set button style */
+#set-btn,
+.btn {
+    border-radius: 26px;
+    background: #F0F757;
+    padding: 7px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #34344A;
+    border:1px solid #F0F757;
+}
+
+#set-btn:hover, .btn:hover{
+    background-color: #fff;
+}
+
+/* Current timer divider */
+#current-timers {
+    background:#34344A;;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+
+/* Time up css */
+.time-up {
+    border-radius: 20px;
+    background: #F0F757;
+    color: #34344a;
+    font-weight: 600;
+}
+
+.time-up>span:nth-child(2) {
+    font-size: 25px;
+}
+
+.delete-btn {
+    background-color: #34344a;
+    color: #F0F757;
+    font-weight: 600;
+}
+
+/* main timer css */
+.timer-card {
+    background-color: #34344a;
+    padding: 20px 20px;
+    width: 450px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* changing the styles of input elements */
+input[type="number"] {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    width: 45px;
+    height: 24px;
+    border: none;
+    text-decoration-line: underline;
+    margin: 0px 0.5rem;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Current timer divider */
+#current-timers {
+    background-color: #39393e;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+
+/* Time up card css */
+.time-up {
+    background-color: #F0F757;
+    color: #34344a;
+    font-weight: 600;
+}
+
+.time-up>span:nth-child(2) {
+    font-size: 25px;
+}
+
+.delete-btn {
+    background-color: #34344a;
+    color: #F0F757;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+.delete-btn:hover {
+    color:#34344A;
+}
